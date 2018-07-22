@@ -22,3 +22,5 @@ table.table#tblresult>tr>td*5  >> key create element
 yarn add live-server >> add live-server to project [local] 
 vue ui >> create/config project with ui
 code. >> open visual code on cmd
+- Vue
+computed cached but methods not cached
