@@ -1,4 +1,20 @@
 train Vuejs 
+https://gist.github.com/tutor4dev/864aa0f62afce640c234f82be2cc5f90#file-01-overview-md
+**setting
+- Chome Extension
+Vue DevTools
+- Vistual Studio Extensions
+npm Intellisense
+Path Intellisense
+vue (liuji-jim)
+Vue VSCode Snippets
+- npm Global Package
+Terminal
+npm -g install yarn
+npm -g install @vue/cli
+npm -g install json-server
+npm -g nodemon
+==========================================================================================
 22/07/2018
 - Cmd keys
 npm -g -list --depth=0  >> check list npm
