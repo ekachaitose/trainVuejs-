@@ -1,0 +1,5 @@
+train Vuejs 
+22/07/2018
+npm -g -list --depth=0  >> check list npm
+table.table#tblresult>tr>td*5  >> key create element
+yarn add live-server >> add live-server to project [local] 
