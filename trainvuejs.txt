@@ -24,3 +24,4 @@ vue ui >> create/config project with ui
 code. >> open visual code on cmd
 - Vue
 computed cached but methods not cached
+v-model >> check type from tag
