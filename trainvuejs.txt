@@ -1,6 +1,6 @@
 train Vuejs 
 https://gist.github.com/tutor4dev/864aa0f62afce640c234f82be2cc5f90#file-01-overview-md
-**setting
+**setting***
 - Chome Extension
 Vue DevTools
 - Vistual Studio Extensions
@@ -14,6 +14,8 @@ npm -g install yarn
 npm -g install @vue/cli
 npm -g install json-server
 npm -g nodemon
+- font
+fira code
 ==========================================================================================
 22/07/2018
 - Cmd keys
@@ -22,6 +24,11 @@ table.table#tblresult>tr>td*5  >> key create element
 yarn add live-server >> add live-server to project [local] 
 vue ui >> create/config project with ui
 code. >> open visual code on cmd
+yarn add vue-router >> add package router
+yarn add vee-validate >> add package validate
+json-server mywind.json >> run json-server
+yarn add axios >> add package use restful
 - Vue
 computed cached but methods not cached
 v-model >> check type from tag
+ถ้าชื่อตัวแปรเป็นชื่อเดียวกับ props ให้พิมพ์แค่ตัวเดียวได้เลย ex routes : routes เขียนเป็น routes
