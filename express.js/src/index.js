@@ -15,18 +15,23 @@ app.set('sequelize', sequelize)
 */
 require('./models/product')()
 require('./models/customer')()
+const User = require('./models/user')()
+//User.sync({ force: true })
 
+/**
+ * setup cors
+ */
+const cors = require('./middlewares/cors')
+const preflight = require('./middlewares/preflight')
+app.use(cors, preflight)
+const jwt = require('./middlewares/jwt')
 /**
  * setup route
  */
 
-
-app.get('/', (req, res) => {
-    res.json([1, 2, 3, 4, 5])
-})
-//const router = require('./routes/product')
-app.use('/api/products', require('./routes/product'))
+app.use('/api/products', jwt, require('./routes/product'))
 app.use('/api/customers', require('./routes/customer'))
+app.use('/api/users', require('./routes/user'))
 
 app.use(require('./middlewares/404'))
 app.listen(3000)

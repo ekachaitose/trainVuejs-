@@ -36,6 +36,8 @@ v-model >> check type from tag
 04/08/2018
 * cmd key
 -yarn add lodash >>> ใช้ในการหน่วยเวลา
+-yarn add bcryptjs >>> package encrypt
+-yarn add jsonwebtoken >> package token
 
 * detail
 -respone
