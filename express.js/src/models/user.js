@@ -13,7 +13,7 @@ module.exports = () => {
         password: Sequelize.STRING
     }
     const options = {
-        timestamps: false
+
     }
 
     return sequelize.define('user', fields, options)
