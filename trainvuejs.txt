@@ -32,3 +32,63 @@ yarn add axios >> add package use restful
 computed cached but methods not cached
 v-model >> check type from tag
 ถ้าชื่อตัวแปรเป็นชื่อเดียวกับ props ให้พิมพ์แค่ตัวเดียวได้เลย ex routes : routes เขียนเป็น routes
+===========================================================================================
+04/08/2018
+* cmd key
+-yarn add lodash >>> ใช้ในการหน่วยเวลา
+
+* detail
+-respone
+async getCustomers(limit, page) {
+      const { data: customer, headers } = await axios.get(
+        `http://localhost:3000/customers/?_limit=${limit}&_page=${page}`
+      );
+      console.log(headers["x-total-count"]);
+      this.customers = customer;
+-setting format
+open user setting add   "editor.formatOnSave": true and add file .prettierrc 
+code in file .prettierrc  == > {
+									"semi":false,
+									"singleQuote":true,
+									"tabWidth": 4
+								}
+-clone object 
+const foo = { foo: 'FOO' }
+const bar = { ...foo, bar: 'BAR', baz: 'BAZ' }
+============================================================================================
+05/08/2018
+* db
+init db >> mysql -u root -p < tutor4dev.sql
+use db >>  mysql -u root -p
+show db >> show databases;
+
+* detail
+add express >> yarn add express
+middleware = routes
+enpoint api :
+GET /customers >>> select all 
+GET /customers/:id >> select id 
+POST /customers >> insert
+PUT /customers/:id >> update
+DELETE /customers/:id >> delete
+add plugin mysql >> yarn add mysql2
+สร้างความสัมพันธ์ให้เทเบิ้ลแบบ โมเดล >> yarn add sequelize (mysql) , npm tedious (sql server)
+create variable name  >>
+- should url /products , table products 
+
+
+-middleware 
+ใช้ในการเช็คการเข้าทำงานของ app และการส่งข้อมูลออกจาก app
+สามารถเลือกใช้เฉพาะที่ได้ ไม่จำเป็นต้องใช้ทั้ง app
+
+-conncet db 
+.all = select * from 
+.findById = select * from .. where id (primarykey)
+add options >> tableName : 'xxx'  เพื่อเป็นการ  reference table in db
+app.use(express.json())  >> แปลงค่าที่ post ให้เป็น json
+กำหนดค่าเริ่มต้นที่ของ record ที่ต้องการ  (offset) , limit = จำนวน record ที่ต้องการดึง  >>>>  
+const result = await Product.all({
+            offset: 0
+            , limit: 10
+        })
+
