@@ -62,6 +62,7 @@ const bar = { ...foo, bar: 'BAR', baz: 'BAZ' }
 * db
 init db >> mysql -u root -p < tutor4dev.sql
 use db >>  mysql -u root -p
+connect db >> conncet [dbName]
 show db >> show databases;
 
 * detail

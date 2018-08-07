@@ -12,9 +12,7 @@ module.exports = () => {
         username: Sequelize.STRING,
         password: Sequelize.STRING
     }
-    const options = {
-
-    }
+    const options = {}
 
     return sequelize.define('user', fields, options)
 }

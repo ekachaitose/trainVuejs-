@@ -9,6 +9,6 @@ module.exports = (req, res, next) => {
         jwt.verify(authToken, 'SECRET')
         next()
     } catch (error) {
-        res.status(403).end()
+        res.status(403).json({error:error.message}).end()
     }
 }
